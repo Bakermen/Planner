@@ -11,6 +11,7 @@ class JobApplication(models.Model):
     company_name = models.CharField(max_length=100)
     job_title = models.CharField(max_length=100)
     job_description = models.TextField(blank=True)
+    link = models.URLField(default="None")
     expected_salary = models.IntegerField()
     created_at = models.DateTimeField()
 
